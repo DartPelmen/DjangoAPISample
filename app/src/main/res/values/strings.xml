@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FLMySQLConnect</string>
+    <string name="button_to_second_activity_text">Window 2</string>
+    <string name="button_to_firsts_activity_text">to window1</string>
+    <string name="server_data_placeholder">data from server will be displayed here</string>
+    <string name="select_button_text">select</string>
+    <string name="insert_button_text">insert</string>
+    <string name="network_error_text">Network Error</string>
+    <string name="insert_success_text">insert success</string>
+    <string name="insert_error_text">insert error</string>
+</resources>
