@@ -36,7 +36,8 @@ class SecondActivity : AppCompatActivity() {
             retrofit.create<DjangoAPI>().select().enqueue(object :Callback<Table1>{
                 override fun onResponse(call: Call<Table1>, response: Response<Table1>) {
                     Log.d("MyActivity",response.raw().toString())
-                    binding.textView.text = response.body()?.data2.toString()
+                    Log.d("MyActivity",response.raw().toString())
+                    binding.textView.text = response.body()?.data1.toString()
                 }
                 override fun onFailure(call: Call<Table1>, t: Throwable) {
                     t.printStackTrace()
@@ -51,7 +52,7 @@ class SecondActivity : AppCompatActivity() {
             val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss")
             val time = LocalDateTime.now().format(formatter)
             val table1 = Table1()
-            table1.data2 = time
+            table1.data1 = time
             retrofit.create<DjangoAPI>().insert(table1).enqueue(object : Callback<Status>{
                 override fun onResponse(call: Call<Status>, response: Response<Status>) {
                     Toast.makeText(this@SecondActivity,response.body()?.status.toString(),Toast.LENGTH_SHORT).show()

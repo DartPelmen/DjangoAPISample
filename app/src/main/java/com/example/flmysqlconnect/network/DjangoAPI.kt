@@ -11,6 +11,6 @@ import retrofit2.http.POST
 interface DjangoAPI {
     @GET("/")
     fun select(): Call<Table1>
-    @POST("/")
+    @POST("/insert/")
     fun insert(@Body value: Table1):Call<Status>
 }

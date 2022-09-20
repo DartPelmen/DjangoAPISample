@@ -14,7 +14,7 @@ object RetrofitObject{
             if(!this::retrofit.isInitialized)
                 retrofit = Retrofit.Builder()
                     .addConverterFactory(GsonConverterFactory.create())
-                    .baseUrl("https://bknd-fl.herokuapp.com/").build()
+                    .baseUrl("https://django-server-fl.herokuapp.com/").build()
         }
         return retrofit
     }

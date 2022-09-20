@@ -3,6 +3,6 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">10.0.2.2</domain>
         <domain includeSubdomains="true">192.168.0.199</domain>
-        <domain includeSubdomains="true">bknd-fl.herokuapp.com</domain>
+        <domain includeSubdomains="true">django-server-fl.herokuapp.com</domain>
     </domain-config>
 </network-security-config>

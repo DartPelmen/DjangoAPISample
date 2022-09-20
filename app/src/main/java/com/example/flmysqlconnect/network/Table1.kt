@@ -5,5 +5,5 @@ package com.example.flmysqlconnect.network
  * Используется в GET-запросах.
  * */
 class Table1 {
-    var data2: String? = null
+    var data1: String? = null
 }
